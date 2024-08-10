@@ -1,0 +1,131 @@
+box-sizing: border-box;
+    /*trying this out as my default box-sizing*/
+    /*will need rules for ::before and ::after but they aren't used here*/
+  }
+  
+  html {
+    font-size: 62.5%;
+    /*changes root font size so that 1rem=10px.Just so I can do the math easier in my head, since I'm told using rem units is best practice*/
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    /*The two lines above are so web browser algorithms don't resize my text on mobile. First line for iOS, second for "everyone" else*/
+  }
+  
+  body {
+    font-size: 1.6rem;
+    /*resizes all the text back to default 16px for now*/
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+      Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji;
+    background-color: #0d1117;
+    color: #e6edf3;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    /*lets containers CONTAIN their images*/
+  }
+  
+  ol:not(article ol),
+  ul:not(article ul) {
+    list-style: none;
+    /*Add 'role="list" to elements for screen reading, list-style=none; disables on some browsers. This is just a default placeholder, but good to note anyway. */
+    padding: 2rem;
+  }
+  
+  a {
+    text-underline-position: under;
+    /* lowers underline, better readibility */
+    text-decoration-thickness: 7;
+    /* thickness as a % of the font size */
+  }
+  
+  main {
+    display: block;
+    padding-left: 30rem;
+    padding-right: 10rem;
+    overflow: auto;
+  }
+  
+  main a {
+    color: #218bff;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #e6edf3;
+  
+  }
+  
+  #navbar ul {
+    margin: 0;
+    padding: 0.5rem;
+  }
+  
+  #navbar li {
+    display: flexbox;
+    margin-right: 2rem;
+    padding: 0.2rem;
+  
+  }
+  
+  #navhead {
+    padding-bottom: 1rem;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent; 
+  }
+
+#navbar a:hover {
+  background-color: rgba(177, 186, 196, 0.08);
+  border-radius: 0.8rem;
+  padding: 0.3rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+li, li:img {
+  padding: 0.2rem;
+}
+  
+  figure {
+    padding-bottom: 1.5rem;
+    margin-left: 1rem;
+  
+  }
+  
+  figcaption {
+    display: inherit;
+    margin-top: -2rem
+  }
+
+  p {
+    display: block;
+  }
+
+  @media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 1em;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  p {
+    font-size: 2rem;
+    margin-bottom: 2em;
+  }
+}

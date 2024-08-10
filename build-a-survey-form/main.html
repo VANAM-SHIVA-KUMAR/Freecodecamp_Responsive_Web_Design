@@ -1,0 +1,115 @@
+<!-- HTML file -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Survey/Feedback Form">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <!-- Header -->
+        <header>
+            <h1 id="title">XYZ Company<sup>&reg;</sup> Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform.</p>
+        </header>
+
+        <!-- Form -->
+        <form id="survey-form" action="#" method="get">
+
+<!-- Contact Information -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-group">
+                    <label id="name-label" for="name">Name
+                        <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                    </label>
+                    <label id="email-label" for="email">Email
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    </label>
+                    <label id="number-label" for="number">Age
+                        <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your Age">
+                    </label>
+                    <label id="address-label" for="address">Address
+                        <input type="text" id="address" name="address" placeholder="Street, State, Country, PinCode">
+                    </label>
+                </div>
+            </fieldset>
+
+<!-- Service Infrmation -->
+            <fieldset>
+                <legend>Service Information</legend>
+                <div class="form-group">
+
+                    <!-- Used <p> element as a label text(in radio and checkbox inputs) for text styling-->
+                    <p class="normal-text">Which services are you using?</p>
+                    
+                    <label for="e-com">
+                        <input type="checkbox" id="e-com" name="e-com" value="e-com" checked> E-Commerce service
+                    </label>
+                    <label for="finance">
+                        <input type="checkbox" id="finance" name="finance" value="finance"> Digital Financial Service
+                    </label>
+                    <label for="stream">
+                        <input type="checkbox" id="stream" name="stream" value="stream"> Streaming Service
+                    </label>
+                    <label for="social-media">
+                        <input type="checkbox" id="social-media" name="social-media" value="social-media"> Social Media
+                        Service
+                    </label>
+                    <label for="online-edu">
+                        <input type="checkbox" id="online-edu" name="online-edu" value="online-edu"> Online Education
+                        Service
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="dropdown">When was the last time you used the service?
+                        <select id="dropdown">
+                            <option value="" disabled selected>Select One</option>
+                            <option value="1">Today</option>
+                            <option value="2">This Week</option>
+                            <option value="3">This Month</option>
+                            <option value="4">This Year</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+
+<!-- Service Feedback -->
+            <fieldset>
+                <legend>Service Feedback</legend>
+                <div class="form-group">
+
+                    <!-- Used <p> element as a label text(in radio and checkbox inputs) for text styling-->
+                    <p class="normal-text">How do you rate the selected service?</p>
+
+                    <label for="good">
+                        <input type="radio" id="good" name="rating" value="good" checked> Good &#x1f600;
+                    </label>
+                    <label for="average">
+                        <input type="radio" id="average" name="rating" value="average"> Average &#x1f611;
+                    </label>
+                    <label for="bad">
+                        <input type="radio" id="bad" name="rating" value="bad"> Bad &#x1f620;
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Any changes or potential improvements.
+                        <textarea id="comments" name="comments" cols="30" rows="4"
+                            placeholder="Enter your comment here..."></textarea>
+                    </label>
+                </div>
+            </fieldset>
+            <button id="submit" type="submit">Submit</button>
+            <button id="reset" type="reset" onclick="alert('Reset completed..!')">Reset</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!-- CSS  file -->
+html {
+    font-size: 17px;
+}
+
+body {
+    background: linear-gradient(To bottom, #39697aaa, #54747fcc), url(https://source.unsplash.com/mcSDtbWXUZU);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    /* border: 1px solid red; */
+    margin: 3.2em auto 0;
+    max-width: 680px;
+    min-width: 460px;
+    width: 80vw;
+}
+
+header {
+    /* border: 1px solid limegreen; */
+    margin: 0 0 5em 0;
+    padding: 0 8px;
+}
+
+#title,
+#description {
+    /* border: 1px solid limegreen; */
+    color: white;
+    margin: 0 0 0.5em;
+    text-align: center;
+}
+
+#title {
+    font-weight: 500;
+}
+
+#description {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+#survey-form {
+    /* border: 1px solid blue; */
+    background-color: #a9a9a99f;
+    border-radius: 5px;
+    padding: 2.25em;
+}
+
+fieldset {
+    border: 1px solid #000;
+    margin: 0 0 2.55em;
+    padding: 0 1em;
+}
+
+legend {
+    background-color: #565656;
+    font-size: 1.1rem;
+    color: white;
+    padding: 6px 10px;
+}
+
+label {
+    /* border: 1px solid green; */
+    font-size: 1.1rem;
+    display: block;
+    margin: 0.6em 0;
+}
+
+input, select, textarea {
+    accent-color: #005673;
+    background-color: #d0e2e8;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.1em;
+}
+
+.form-group {
+    /* border: 1px solid brown; */
+    margin: 1.85em 0 1em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    /* border: 2px solid red; */
+    display: inline-block;
+    margin: -2px 5px 0 5px;
+    vertical-align: middle;
+    width: 1.1em;
+}
+
+.normal-text {
+    font-size: 1.1rem;
+    margin: 0 0 0.65em;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    font-size: 1.1rem;
+    margin: 15px auto 0;
+    min-width: 200px;
+    height: 2.6rem;
+    width: 20vw;
+}
+
+button[type="submit"] {
+    background-color: #26353a;
+}
+
+button[type="reset"] {
+    background-color: #414141;
+}
